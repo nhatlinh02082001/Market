@@ -1,0 +1,4 @@
+--patch-module
+com.oumarket.quanlychuoisieuthibanle=_
+--add-reads
+com.oumarket.quanlychuoisieuthibanle=ALL-UNNAMED

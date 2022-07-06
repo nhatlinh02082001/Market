@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.oumarket.tester01.NhanVienTestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.629 s <<< FAILURE! - in com.oumarket.tester01.NhanVienTestSuite
+testEditSuccess  Time elapsed: 0.029 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.oumarket.quanlychuoisieuthibanle/com.oumarket.tester01.NhanVienTestSuite.testEditSuccess(NhanVienTestSuite.java:106)
+
+testDeleteSuccess  Time elapsed: 0.02 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.oumarket.quanlychuoisieuthibanle/com.oumarket.tester01.NhanVienTestSuite.testDeleteSuccess(NhanVienTestSuite.java:84)
+

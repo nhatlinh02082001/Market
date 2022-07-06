@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="606.0" prefWidth="1180.0" styleClass="Main" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oumarket.quanlychuoisieuthibanle.FXMLOUMarketController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="OUMarket" text="OU Market" />
+      <TabPane prefHeight="670.0" prefWidth="866.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Bán hàng">
+               <content>
+                  <AnchorPane prefHeight="563.0" prefWidth="899.0">
+                     <children>
+                        <TableView fx:id="tbHangHoa" layoutX="5.0" layoutY="51.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="705.0" />
+                        <TextField fx:id="txtKeyword" layoutX="104.0" layoutY="13.0" prefHeight="26.0" prefWidth="520.0" />
+                        <Label layoutX="4.0" layoutY="17.0" prefHeight="18.0" prefWidth="100.0" text="Mã hàng:" />
+                        <TableView fx:id="tbSelectedHangHoa" layoutX="737.0" layoutY="51.0" prefHeight="444.0" prefWidth="415.0" />
+                        <Separator layoutX="719.0" layoutY="15.0" orientation="VERTICAL" prefHeight="480.0" prefWidth="10.0" />
+                        <Button layoutX="737.0" layoutY="15.0" mnemonicParsing="false" onAction="#hoaDonHandler" prefHeight="26.0" prefWidth="131.0" text="Thanh toán" />
+                        <Button layoutX="631.0" layoutY="15.0" mnemonicParsing="false" onAction="#refreshTableHangHoa" prefHeight="26.0" prefWidth="80.0" text="Làm mới" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+          <Tab text="Quản lý">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#quanLyChiNhanhHandler" text="Chi nhánh" />
+                        <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#quanLyNhanVienHandler" text="Nhân viên" />
+                        <Button layoutX="20.0" layoutY="54.0" mnemonicParsing="false" onAction="#quanLyHangHoaHandler" text="Hàng hoá" />
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
